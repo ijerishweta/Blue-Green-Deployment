@@ -96,8 +96,8 @@ resource "aws_eks_cluster" "devopsshack" {
   }
 }
 
-resource "aws_eks_node_group" "Private-Key" {
-  cluster_name    = aws_eks_cluster.Private-Key.name
+resource "aws_eks_node_group" "devopsshack" {
+  cluster_name    = aws_eks_cluster.devopsshack.name
   node_group_name = "devopsshack-node-group"
   node_role_arn   = aws_iam_role.devopsshack_node_group_role.arn
   subnet_ids      = aws_subnet.devopsshack_subnet[*].id
