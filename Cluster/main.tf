@@ -1,3 +1,5 @@
+export AWS_REGION=ap-south-1
+
 provider "aws" {
   region = "ap-south-1"
 }
